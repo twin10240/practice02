@@ -12,7 +12,7 @@ public class Prob5 {
 			Random r = new Random();
 			int k = r.nextInt(100) + 1;
 
-			 System.err.println("k : " + k);
+//			System.err.println("k : " + k);
 
 			int cnt = 1;
 			int min = 1, max = 100;
