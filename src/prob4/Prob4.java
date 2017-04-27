@@ -7,9 +7,6 @@ public class Prob4 {
 		
 		char[] c2 = reverse("Java Programming!");
 		printCharArray(c2);
-		
-		char[] nn = "ddd".toCharArray();
-		
 	}
 	
 	public static char[] reverse(String str) {

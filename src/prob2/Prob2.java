@@ -19,7 +19,7 @@ public class Prob2 {
 			/* 배열에 저장된 정수 값 더하기 */	
 			sum += intArray[i];
 		}
-
+		
 		/* 출력 */
 		System.out.println("평균은 " + sum/intArray.length + " 입니다.");
 		

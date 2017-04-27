@@ -12,13 +12,13 @@ public class Prob5 {
 			Random r = new Random();
 			int k = r.nextInt(100) + 1;
 
-			// System.err.println("k : " + k);
+			 System.err.println("k : " + k);
 
 			int cnt = 1;
 			int min = 1, max = 100;
 			int num = 0;
 
-			System.out.println("¼ö¸¦ °áÁ¤ÇÏ¿´½À´Ï´Ù. ¸ÂÃçº¸¼¼¿ä");
+			System.out.println("ìˆ˜ë¥¼ ê²°ì •í•˜ì˜€ìŠµë‹ˆë‹¤. ë§žì¶”ì–´ ë³´ì„¸ìš”");
 			System.out.println(min + "-" + max);
 			System.out.print(cnt + ">>");
 			num = scanner.nextInt();
@@ -26,25 +26,25 @@ public class Prob5 {
 			while (num != k) {
 				if (num > k) {
 					max = num;
-					System.out.println("´õ ³·°Ô");
+					System.out.println("ë” ë‚®ê²Œ");
 					System.out.println(min + "-" + max);
 					System.out.print(++cnt + ">>");
 					num = scanner.nextInt();
 				} else if (num < k) {
 					min = num;
-					System.out.println("´õ ³ô°Ô");
+					System.out.println("ë” ë†’ê²Œ");
 					System.out.println(min + "-" + max);
 					System.out.print(++cnt + ">>");
 					num = scanner.nextInt();
 				}
 			}
 
-			System.out.println("¸Â¾Ò½À´Ï´Ù.");
-			System.out.println("´Ù½Ã ÇÏ½Ã°Ú½À´Ï±î?(y/n)");
+			System.out.println("ë§žì•˜ìŠµë‹ˆë‹¤.");
+			System.out.println("ë‹¤ì‹œ í•˜ì‹œê² ìŠµë‹ˆê¹Œ?(y/n)");
 			answer = scanner.next();
 
 			if (answer.equals("n")) {
-				System.out.println("Á¾·áÇÕ´Ï´Ù.");
+				System.out.println("ì¢…ë£Œí•©ë‹ˆë‹¤.");
 				break;
 			} else {
 				continue;
