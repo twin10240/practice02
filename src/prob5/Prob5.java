@@ -12,8 +12,6 @@ public class Prob5 {
 			Random r = new Random();
 			int k = r.nextInt(100) + 1;
 
-//			System.err.println("k : " + k);
-
 			int cnt = 1;
 			int min = 1, max = 100;
 			int num = 0;
@@ -27,16 +25,14 @@ public class Prob5 {
 				if (num > k) {
 					max = num;
 					System.out.println("더 낮게");
-					System.out.println(min + "-" + max);
-					System.out.print(++cnt + ">>");
-					num = scanner.nextInt();
 				} else if (num < k) {
 					min = num;
 					System.out.println("더 높게");
-					System.out.println(min + "-" + max);
-					System.out.print(++cnt + ">>");
-					num = scanner.nextInt();
 				}
+				
+				System.out.println(min + "-" + max);
+				System.out.print(++cnt + ">>");
+				num = scanner.nextInt();
 			}
 
 			System.out.println("맞았습니다.");
